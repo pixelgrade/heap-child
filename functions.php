@@ -40,9 +40,12 @@ add_action( 'after_setup_theme', 'heap_child_theme_setup' );
 
 function heap_child_enqueue_styles() {
 
+	$theme = wp_get_theme();
+
+	wp_enqueue_style( 'heap-main-style', get_template_directory_uri() . '/style.css', array(), $theme->get( 'Version' ) );
+
 	// Here we are adding the child style.css while still retaining
 	// all of the parents assets (style.css, JS files, etc)
-
 	wp_enqueue_style( 'heap-child-style',
 		get_stylesheet_directory_uri() . '/style.css',
 		array('heap-main-style') //make sure the the child's style.css comes after the parents so you can overwrite rules
