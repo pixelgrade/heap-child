@@ -1,13 +1,13 @@
 /*
 Theme Name: Heap Child
-Theme URI: https://pixelgrade.com/demos/pile2/
+Theme URI: https://pixelgrade.com/demos/heap/
 Author: PixelGrade
 Author URI: https://pixelgrade.com/
 Description: They just keep piling on and on.
-Template: pile
+Template: heap
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: pile-child
+Text Domain: heap-child
 Domain Path: /languages/
 Tags: white, light, dark, responsive-layout, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
 Requires at least: 4.4
@@ -26,4 +26,4 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 If you wish however, you can copy the whole style.css file from the parent here and hack at it - see functions.php for more details.
 In that case please remember that you still need to retain the header above (replace the header of the parent style.css with the one above),
-specifically the 'Template: pile' line. */
+specifically the 'Template: heap' line. */
