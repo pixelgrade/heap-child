@@ -42,7 +42,12 @@ function heap_child_enqueue_styles() {
 
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'heap-main-style', get_template_directory_uri() . '/style.css', array(), $theme->get( 'Version' ) );
+	if( !is_rtl() ) {
+		wp_enqueue_style( 'heap-main-style', get_template_directory_uri() . '/style.css', array(), $theme->get( 'Version' ) );
+	} else {
+		wp_enqueue_style( 'heap-main-style', get_template_directory_uri() . '/rtl.css', array(), $theme->get( 'Version' ) );
+	}
+
 
 	// Here we are adding the child style.css while still retaining
 	// all of the parents assets (style.css, JS files, etc)
